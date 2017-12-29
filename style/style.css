@@ -134,3 +134,12 @@
   background-color: #ffa;
   width: 33.333333333333333333333333333333%;
 }*/
+td
+{
+  text-align: center;
+}
+img:hover
+{
+   box-sizing: border-box;
+   box-shadow:2px 2px 2px 2px #888888;  
+}
