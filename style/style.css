@@ -128,9 +128,9 @@
 .product-border{
   border: 2px solid tan;
 }
-td:active
+/*td:active
  {
   position: absolute;
   background-color: #ffa;
   width: 33.333333333333333333333333333333%;
-}
+}*/
