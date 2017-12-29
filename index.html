@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Heetesh Panghanti</title>
-		<meta charset="utf-8" /> 
-		<link rel="favicon" type="image/ico" href="">
+		<title>Doodhwala</title>
+		<meta charset="utf-8" > 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--
 		<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js" ></script>
 		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		-->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="lib/angular.min.js"></script>
 		<script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<!--
 		<script type="text/javascript" src="lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
 		<script type="text/javascript" src="app/app.js"></script>
@@ -16,18 +25,90 @@
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		-->
 	</head>
-	<body ng-app="" ng-controller="ctrl" oncontextmenu="return false;">
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="navbar-header">
-				<a href="" class="navbar-brand">Doodhwala</a>
-				<button type="button" class="navbar-toggle"    
-				 data-toggle="collapse" data-target="">
-					<span class="sr-only">Toggle</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>	
+	<body oncontextmenu="return false">
+		<nav class="navbar navbar-inverse navbar-fixed-top  justify-content-between" role="navigation">
+				<a href="#" class="navbar-brand"><b>Doodhwala</b></a>
+				<form class="form-inline navbar-right">
+   					<!-- <input class="form-control mr-sm-2" type="search" placeholder="Set your location" aria-label="Search">
+				    --><button class="btn btn-outline-warning my-2 my-sm-0" type="submit" style="color:white;">Set Location</button>
+ 			   </form>
+		</nav><br>
+		<div class="table-responsive">
+    		<table class="table table-bordered table-condensed">
+    			
+    			<tr>
+    				<td class="warning">Milk</td>
+    				<td class="warning">Curd</td>
+    				<td class="warning">Cheese</td>
+    			</tr>
+    			<tr>
+    				<td class="warning">Yoghurt</td>
+    				<td class="warning">Paneer</td>
+    				<td class="warning">Butter</td>
+    			</tr>
+    			<tr>
+    				<td class="warning">Ghee</td>
+    				<td class="warning">Lassi</td>
+    				<td class="warning">Ice Cream</td>
+    			</tr>
+    			<tr>
+    				<td class="warning">Green Peas</td>
+    				<td class="warning">Basundi</td>
+    				<td class="warning">Mava/Khava</td>
+    			</tr>
+    		</table>
+		</div>
+		<!-- Items List--><br/><br/>
+		<div class="container-fluid fill">
+			<div class="row product">
+					<div class="col-xs-4">
+						<div align="center product-border">Milk</div>
+					</div>
+					<div class="col-xs-4">
+						<div align="center product-border">Curd</div>
+					</div>
+					<div class="col-xs-4">
+						<div align="center product-border">Cheese</div>
+					</div>
+			</div>	
+			<div class="row product">
+					<div class="col-xs-4">
+						<div align="center product-border">Yoghurt</div>
+					</div>
+					<div class="col-xs-4">
+						<div align="center product-border">Paneer</div>
+					</div>
+					<div class="col-xs-4">
+						<div align="center product-border">Butter</div>
+					</div>
+			</div>	
+			<div class="row product">
+					<div class="col-xs-4">
+						<div align="center product-border">Ghee</div>
+					</div>
+					<div class="col-xs-4">
+						<div align="center product-border">Lassi</div>
+					</div>
+					<div class="col-xs-4">
+						<div align="center product-border">Ice Cream</div>
+					</div>
+			</div>	
+			<div class="row product">
+					<div class="col-xs-4">
+						<div align="center product-border">Green Peas</div>
+					</div>
+					<div class="col-xs-4">
+						<div align="center product-border">Basundi</div>
+					</div>
+					<div class="col-xs-4">
+						<div align="center product-border">Mava/Khava</div>
+					</div>
 			</div>
-		</nav>
+			<div class="row product">
+				<div class="container-fluid fill well">
+					<h1>hell</h1>
+				</div>
+			</div>	
+		</div>
 	</body>
 	</html>
