@@ -5,11 +5,6 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
-		<!--
-		<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
-		<script src="lib/bootstrap/js/bootstrap.min.js" ></script>
-		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-		-->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
@@ -18,29 +13,22 @@
 		<script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
-		<!--
-		<script type="text/javascript" src="lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
-		
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-		-->
-		<script type="text/javascript" src="app/app.js"></script>
-		
-	</head>
-	<body oncontextmenu="return false" ng-app="myapp">
-		<nav class="navbar navbar-inverse navbar-fixed-top  justify-content-between" role="navigation">
-				<a href="#" class="navbar-brand"><b>Doodhwala</b></a>
-				<form class="form-inline navbar-right">
-   					<!-- <input class="form-control mr-sm-2" type="search" placeholder="Set your location" aria-label="Search">
-				    --><button class="btn btn-outline-warning my-2 my-sm-0" type="submit" style="color:white;">Set Location</button>
- 			   </form>
-		</nav><br><br><br>
 
-		<ui-view></ui-view>
-		<!--down navigation-->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-3 col-sm-3"></div>
-			</div>
+	</head>
+	<body>
+		<div class="container-fluid fill">
+			<img src="images/home.jpg" class="image-responsive">
+			<div class="text-block">
+   				 <h4><b>YourDairy</b></h4>
+    			<p>Made By People.For People</p>
+  			</div>
 		</div>
+		<script>
+		setTimeout(function()
+					{ 
+						window.location="index.html";
+					}, 5000);
+			
+		</script>
 	</body>
-	</html>
+</html>
