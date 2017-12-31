@@ -1,0 +1,43 @@
+<div class="container-fluid">
+	<form name="signup" method="" action="" novalidate>
+		<div class="page-header">
+			<h1><b>SignUp</b></h1><hr>
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="uemail" class="form-control" name="uemail" ng-model="uemail" required>
+			<span ng-if=""></span>
+		</div>
+		<div class="form-group">
+			<label for="password">Password</label>
+			<input type="password" class="form-control" name="upwd" ng-model="upwd" required>
+			<span ng-if=""></span>
+		</div>
+		<div class="form-group">
+			<label for="password">ReType Password</label>
+			<input type="password" class="form-control" name="upwd2" ng-model="upwd2" required>
+			<span ng-if="signup.upwd!=signup.upwd2" ng-value="signup.upwd.$valid='false'">Password should match</span>
+		</div>
+		<div class="form-group">
+			<label for="mobile">Mobile No</label>
+				<input class="form-control" name="umobile" ng-model="umobile" required>
+			<span>{{signup.state.$touched || signup.state.$valid}}</span>
+		</div>
+		<div class="form-group">
+			<label for="State">State</label>
+			<select class="form-control" name="state" ng-model="state" required>
+				<option value="Maharastra">Maharashtra</option>
+			</select>
+			<span></span>
+		</div>
+		<div class="form-group" ng-show="(signup.state.$touched)">
+			<label>City</label>
+			<select ng-if="(signup.state.$touched)" class="form-control" name="city" ng-model="city" required>
+				<option value=""></option>
+			</select>
+		</div>
+		<div class="form-group">
+			<button class="btn btn-primary btn-block" ng-disabled="signup.$invalid">SignUp</button>
+		</div>
+	</form>
+</div>

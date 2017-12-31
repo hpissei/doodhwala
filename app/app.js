@@ -9,7 +9,7 @@
 		Routesconfig.$inject=['$stateProvider','$urlRouterProvider'];
 		function Routesconfig($stateProvider,$urlRouterProvider)	
 		{
-			$urlRouterProvider.otherwise('/products');
+			//$urlRouterProvider.otherwise('/products');
 			$stateProvider
 			.state('home',{
 				url:'/home',
@@ -18,6 +18,14 @@
 			.state('products',{
 				url:'/products',
 				templateUrl:'html/products.template.html'
+			})
+			.state('login',{
+				url:'/login',
+				templateUrl:'html/login.template.html'
+			})
+			.state('signup',{
+				url:'/signup',
+				templateUrl:'html/signup.template.html'
 			})
 			.state('error',{
 				url:'/error',

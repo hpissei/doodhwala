@@ -161,3 +161,9 @@ img:hover
     padding-left: 20px;
     padding-right: 20px;
 }
+input.ng-invalid {
+    border: 2px solid red;
+}
+input.ng-valid {
+    border:2px solid lightgreen;
+}
